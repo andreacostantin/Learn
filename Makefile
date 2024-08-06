@@ -1,4 +1,4 @@
-files := file1 file2
+files := $(wildcard src/*.c) #Con la wildcard non devo fare più l'elenco di tutti i file
 
 all : hello #C'è la dependences, quindi viene eseguita prima quella, poi all
 	@echo "Variable files : "$(files) #Test di utilizzo della variabile. file1 e file2 non sono stati creati.
